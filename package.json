@@ -6,6 +6,7 @@
   "engines": { "node": ">=20" },
   "scripts": {
     "triage": "tsx src/cli.ts",
+    "triage:pr": "tsx src/triage-pr.ts",
     "test": "node --import tsx --test test/*.test.ts",
     "check": "tsc --noEmit && npm test"
   },
