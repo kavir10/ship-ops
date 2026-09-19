@@ -1,0 +1,10 @@
+{
+  "title": "Add retry telemetry to shipment polling",
+  "body": "Records retry counts without changing polling behavior.",
+  "files": [
+    { "path": "src/polling.ts", "summary": "Emit a counter when a shipment poll retries." },
+    { "path": "test/polling.test.ts", "summary": "Cover retry counter behavior." }
+  ],
+  "ci": { "status": "passing", "checks": ["typecheck", "test"] },
+  "review_threads": []
+}
